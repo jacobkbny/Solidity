@@ -1,14 +1,14 @@
 pragma solidity >=0.5.6;
 
 contract Practice{
+    // my first contract
     string public name = "pkb";
     string public symbol ="cabb";
 
     mapping(uint256 => address) public tokenOwner;
 
     mapping(uint256 => string) public tokenURIs;
-
-    // 소유한 토큰 리스트 
+    // put address out OwnedTokenList by address
     mapping(address => uint256[]) private _ownedTokens;
 
     function mintWtihTokenURI(address to , uint256 tokenID, string memory tokenURI) public returns (bool){
@@ -27,7 +27,7 @@ contract Practice{
     }
     function _removeTokenFromList(address from, uint256 tokenID) private{
         // swap
-        // uint256 lastTokenIndex = _ownedTokens[from].length -1;
+        // Have to find out why array size doesn't decrease even tho token has been delivered successfully
         for(uint256 i=0; i<_ownedTokens[from].length;i++){
             if(tokenID == _ownedTokens[from][i]){
             delete _ownedTokens[from][i];
@@ -44,5 +44,8 @@ contract Practice{
         tokenURIs[id] =uri;
     }
 
+    function ownedTokensdigit(address owner)public view returns(uint256){
+        return _ownedTokens[owner].length;
+    }
 }
 

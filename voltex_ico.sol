@@ -1,6 +1,6 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-
+// describe hwo to deply your ico smart contract 
 contract voltex_ico{
     uint public max_voltex = 10000000;
     uint public usd_to_voltex = 1000;
@@ -31,5 +31,11 @@ contract voltex_ico{
         equity_usd[investor] = equity_voltex[investor]/1000;
         total_voltex_bought -= voltex_sold;
     }
+
+    function check(address investor) public view {
+         equity_voltex[investor]; 
+    }
+
+
 }
 
