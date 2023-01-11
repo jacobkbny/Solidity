@@ -1,0 +1,159 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "investor",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "usd_invested",
+						"type": "uint256"
+					}
+				],
+				"name": "buy_voltex",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "investor",
+						"type": "address"
+					}
+				],
+				"name": "equity_in_usd",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "investor",
+						"type": "address"
+					}
+				],
+				"name": "equity_in_voltex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "max_voltex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "investor",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "voltex_sold",
+						"type": "uint256"
+					}
+				],
+				"name": "sell_voltex",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "total_voltex_bought",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "usd_to_voltex",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"voltex_ico.sol": "voltex_ico"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"voltex_ico.sol": {
+			"keccak256": "0x2d0b39ef8089dde5e1a3a6ab3ca75f10ff91f2e42bbf0ef4f09689231684873d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f0aa1bcab915e30a4fc0e7b26ec65069ed231b1133f6270a0406885628a9316f",
+				"dweb:/ipfs/QmQUfiM9RvqSCUQrbt2sGCbdpEFvoAnGJ3xCVDGTRiCJCr"
+			]
+		}
+	},
+	"version": 1
+}
