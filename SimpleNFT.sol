@@ -52,6 +52,7 @@ contract SimpleNFT{
 contract NFTMarket {
     function PurchaseNFT(uint256 tokenID, address NFTAddress, address to) public returns (bool){
         SimpleNFT(NFTAddress).safeTransferFrom(address(this), to , tokenID);
+        
         return true;
     }
 }
